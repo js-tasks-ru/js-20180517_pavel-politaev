@@ -9,4 +9,9 @@
  */
 function makeLogging(fn, log) {
 
+    return function () {
+        log.push([...arguments])
+
+        return fn.apply(this,arguments)
+    }
 }
