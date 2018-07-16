@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    "build": "webpack --config 12-module/1-task/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,11 @@
     "jasmine-core": "^2.8.0",
     "karma": "^1.7.1",
     "karma-chrome-launcher": "^2.2.0",
+    "karma-htmlfile-reporter": "^0.3.5",
     "karma-jasmine": "^1.1.0",
     "karma-json-reporter": "^1.2.1",
-    "karma-phantomjs-launcher": "^1.0.4"
+    "karma-phantomjs-launcher": "^1.0.4",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.0.8"
   }
 }
