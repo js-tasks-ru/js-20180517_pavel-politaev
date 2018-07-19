@@ -31,7 +31,7 @@
                 'city',
             ]
 
-            document.onclick = (event) => {
+            this.el.addEventListener('click', (event) => {
                 let target = event.target;
 
                 let id = target.getAttribute('data-id');
@@ -40,7 +40,7 @@
                 this.removeItem(id)
 
                 return false;
-            };
+            });
 
             this._render()
         }
